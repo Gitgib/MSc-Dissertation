@@ -1,0 +1,628 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    max-width: 1900px;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    background-color: #54A4B0;
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#49c0f0+0,2cafe3+100;Blue+3D+%2311 */
+    background: #49c0f0; /* Old browsers */
+    background: -moz-linear-gradient(top,  #49c0f0 0%, #2cafe3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #49c0f0 0%,#2cafe3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #49c0f0 0%,#2cafe3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49c0f0', endColorstr='#2cafe3',GradientType=0 ); /* IE6-9 */
+    margin: 2.5em auto 0 auto;
+    max-width: 960px;
+    font: 62.5% Average, Georgia, serif;
+}
+
+p {
+    cursor: default;
+}
+
+#header {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffa84c+0,ff7b0d+100;Orange+3D */
+    background: #ffa84c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffa84c 0%, #ff7b0d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffa84c 0%,#ff7b0d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+}
+
+#header,#main, #footer {
+    font-size: 1.2em;
+}
+
+#header img {
+    float: left;
+    height: 175px;
+}
+
+#motto {
+    margin: 5.9em 0 5.9em 8em;
+    font-weight: 600;
+    word-spacing: 0.5em;
+    text-align: justify;
+    line-height: 1.4;
+    float: left;
+}
+
+.logo {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#header ul {
+    float: right;
+    margin: 4.5em 5em 4.5em 0;
+}
+
+#header ul.loginbtn {
+    float: right;
+    margin: 5.9em 5em 5.9em 0;
+}
+
+#header ul > li {
+    background-color: blue;
+    border: solid black 1px;
+    border-radius: 8px;
+    box-shadow: 2px 3px 0 0 black;
+    display: inline-block;
+    margin-left: 2em;
+    padding: 0.5em 1.5em;
+    text-align: center;
+}
+
+#header ul > li p {
+    margin-bottom: .5em;
+    color: white;
+}
+
+#header ul > li b {
+    font-weight: bold;
+}
+
+#header ul > li > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#header ul > li > a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    background-color: #49c0f0;
+    border: black solid 1px;
+    padding: 2.5em;
+}
+
+#main .wrapper {
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login h3 {
+    padding: .5em;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+}
+
+.form-row > label {
+    padding: .5em 1em .5em 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* text-align: center; register here */
+
+.register {
+    display: inline-block;
+}
+
+.register > h1 {
+    text-align: center;
+    padding-bottom: .5em;
+    font-weight: bold;
+}
+
+.register .form-row {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+#register {
+    float: right;
+    margin-top: .5em;
+}
+
+.register li:nth-child(6) {
+    margin-top: .8em;
+    text-align: center;
+}
+
+#content p, #content ul {
+    margin: 0 0 1.25em 0;
+    line-height: 1.4em;
+}
+
+#content > ul > li > p {
+    margin: 0;
+}
+
+#noBoards {
+    margin: 5em 5em 5em 5em;
+    text-align: center;
+}
+
+.create {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.create p {
+    font-size: 130%
+}
+
+.create li.form-row {
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+}
+
+#footer {
+    background-color: #ffa84c;
+    padding: 1.4em 0;
+}
+
+#footer ul {
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}
+
+#footer ul > li {
+    display: inline-block;
+}
+
+#footer ul > li > a {
+    text-decoration: none;
+}
+
+#footer ul > li > a:hover {
+    text-decoration: underline;
+}
+
+#theTitle {
+    grid-area: title;
+}
+
+#category-cell-1 {
+    grid-area: category1;
+}
+
+#category-cell-2 {
+    grid-area: category2;
+}
+
+#category-cell-3 {
+    grid-area: category3;
+}
+
+#category-cell-4 {
+    grid-area: category4;
+}
+
+#category-cell-5 {
+    grid-area: category5;
+}
+
+#cell-group-1 {
+    grid-area: cell1;
+}
+
+#cell-group-2 {
+    grid-area: cell2;
+}
+
+#cell-group-3 {
+    grid-area: cell3;
+}
+
+#cell-group-4 {
+    grid-area: cell4;
+}
+
+#cell-group-5 {
+    grid-area: cell5;
+}
+
+#cell-group-6 {
+    grid-area: cell6;
+}
+
+#cell-group-7 {
+    grid-area: cell7;
+}
+
+#cell-group-8 {
+    grid-area: cell8;
+}
+
+#cell-group-9 {
+    grid-area: cell9;
+}
+
+#cell-group-10 {
+    grid-area: cell10;
+}
+
+#cell-group-11 {
+    grid-area: cell11;
+}
+
+#cell-group-12 {
+    grid-area: cell12;
+}
+
+#cell-group-13 {
+    grid-area: cell13;
+}
+
+#cell-group-14 {
+    grid-area: cell14;
+}
+
+#cell-group-15 {
+    grid-area: cell15;
+}
+
+#cell-group-16 {
+    grid-area: cell16;
+}
+
+#cell-group-17 {
+    grid-area: cell17;
+}
+
+#cell-group-18 {
+    grid-area: cell18;
+}
+
+#cell-group-19 {
+    grid-area: cell19;
+}
+
+#cell-group-20 {
+    grid-area: cell20;
+}
+
+#cell-group-21 {
+    grid-area: cell21;
+}
+
+#cell-group-22 {
+    grid-area: cell22;
+}
+
+#cell-group-23 {
+    grid-area: cell23;
+}
+
+#cell-group-24 {
+    grid-area: cell24;
+}
+
+#cell-group-25 {
+    grid-area: cell25;
+}
+
+#points-cell-1 {
+    grid-area: points1;
+}
+
+#points-cell-2 {
+    grid-area: points2;
+}
+
+#points-cell-3 {
+    grid-area: points3;
+}
+
+#points-cell-4 {
+    grid-area: points4;
+}
+
+#points-cell-5 {
+    grid-area: points5;
+}
+
+#save {
+    grid-area: save;
+    width: 7em;
+    height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 4%;
+    grid-template-columns: 35px repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+            ". category1 category2 category3 category4 category5"
+            "points1 cell1 cell2 cell3 cell4 cell5"
+            "points2 cell6 cell7 cell8 cell9 cell10"
+            "points3 cell11 cell12 cell13 cell14 cell15"
+            "points4 cell16 cell17 cell18 cell19 cell20"
+            "points5 cell21 cell22 cell23 cell24 cell25";
+    grid-gap: 10px;
+}
+
+.boardForm {
+    margin-top: 3.1em;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: 45px repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+            "title title title title title title"
+            "points category1 category2 category3 category4 category5"
+            "points1 cell1 cell2 cell3 cell4 cell5"
+            "points2 cell6 cell7 cell8 cell9 cell10"
+            "points3 cell11 cell12 cell13 cell14 cell15"
+            "points4 cell16 cell17 cell18 cell19 cell20"
+            "points5 cell21 cell22 cell23 cell24 cell25"
+            ". . . save . .";
+    grid-gap: 10px;
+}
+
+.points {
+    width: 3.4em;
+    height: 3em;
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    text-align: center;
+    overflow: auto;
+    cursor: default;
+}
+
+.warning {
+    color:#f00;
+    font-weight:bold;
+}
+
+.games {
+    max-width: 1300px;
+}
+
+.games .modal-clue {
+    cursor: pointer;
+}
+
+.hint {
+    font-style: italic;
+    text-align: right;
+}
+
+#teams {
+    position: fixed;
+    bottom: 0;
+    width: 1300px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+#teams input[type="text"], input[type="number"] {
+    border: solid 1px #cccccc;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#teams input[type="submit"] {
+    font-size: 1.2em;
+}
+
+.scores {
+    border-collapse: collapse;
+    width: 25%;
+    text-align-last: end;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+select#boards {
+    text-align: center;
+}
+
+.scores tr:nth-child(1) {
+    font-weight: bold;
+}
+
+.scores td {
+    padding: .2em;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: #54A4B0;
+    font-size: 1.7em;
+}
+
+#modal-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    padding: 35px;
+    width: 100%;
+    height: 10%;
+    background-color: #266973;
+}
+
+.modal-hint {
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+#modal-exit {
+    text-align: end;
+}
+
+#modal-points {
+    text-align: center;
+    font-size: inherit;
+    display: block;
+}
+
+#modal-clue {
+    margin: auto;
+    padding: 120px 0;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    font-size: inherit;
+    display: block;
+}
+
+#modal-response {
+    display: block;
+    margin: auto;
+    padding: 120px 0;
+    width: 80%;
+    height: 30%;
+    text-align: center;
+    font-size: inherit;
+    visibility: hidden;
+}
+
+.modal {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
